@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="quiz-header">
+    <h2>Welcome, <span id="usernameDisplay"></span></h2>
+    <p>Question <span id="qNumber">1</span> of 50</p>
+  </div>
+  <div class="quiz-box" id="quizBox">
+    <div class="question" id="questionText">Question will appear here</div>
+    <div class="options" id="optionsContainer">
+      <!-- MCQ options will go here -->
+    </div>
+  </div>
+  <div class="controls">
+    <button onclick="nextQuestion()">Next</button>
+    <br>
+    <button id="j" onclick="submitQuiz()">Submit</button>
+  </div>
+  <div id="scorecard" class="hidden">
+    <h2>Quiz Completed!</h2>
+    <p id="finalScore"></p>
+  </div>
+  <script src="questions.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

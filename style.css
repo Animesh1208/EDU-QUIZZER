@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #fdfcfb, #e2d1c3);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.login-container, .quiz-header, .controls, #scorecard {
+  max-width: 500px;
+  margin: 40px auto;
+  text-align: center;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+  color: #1f4068;
+}
+
+input[type="text"] {
+  padding: 12px;
+  width: 80%;
+  border: 2px solid #d1d1d1;
+  border-radius: 10px;
+  margin: 15px 0;
+  font-size: 16px;
+}
+
+button {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 25px;
+  font-size: 16px;
+  margin: 10px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+.quiz-box {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  margin: 20px auto;
+  max-width: 600px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.question {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.option {
+  background-color: #eee;
+  border-radius: 10px;
+  padding: 12px;
+  font-weight: 500;
+  transition: all 0.3s;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.option:hover {
+  background-color: #ddd;
+}
+
+.option.selected {
+  background-color: #00b09b;
+  color: white;
+  border-color: #0072ff;
+}
+
+#scorecard {
+  background: linear-gradient(to right, #00b09b, #96c93d);
+  color: white;
+}
+
+#finalScore {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+#subjectBreakdown {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.progress-container h4 {
+  margin: 10px 0 5px;
+  color: white;
+}
+
+.progress-bar {
+  background: rgba(255,255,255,0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  height: 25px;
+  margin-bottom: 15px;
+}
+
+.progress-fill {
+  background: white;
+  color: #00b09b;
+  font-weight: bold;
+  text-align: center;
+  height: 100%;
+  line-height: 25px;
+  border-radius: 10px 0 0 10px;
+  transition: width 0.4s ease;
+}
